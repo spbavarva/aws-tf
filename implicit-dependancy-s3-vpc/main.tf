@@ -32,6 +32,7 @@ resource "aws_s3_bucket" "automation" {
   }
 }
 
+# Creating s3 bucket with depends on vpc_id using dynamic argument
 resource "aws_s3_bucket" "automation2" {
   bucket = "automation-${aws_vpc.test_vpc.id}-bucket"
 
