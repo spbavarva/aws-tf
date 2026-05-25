@@ -43,3 +43,8 @@ variable "ingress_rules" {
     type = tuple([number, string, number])
     default = [ 443, "tcp", 443 ]
 }
+
+variable "bucket_name" {
+    type = string
+    default = "dev"
+}
