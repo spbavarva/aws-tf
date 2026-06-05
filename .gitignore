@@ -1,0 +1,98 @@
+# macOS / Windows noise
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local editor and assistant settings
+.claude/
+.codex/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Cloudflare / Wrangler local cache
+.wrangler/
+
+# Terraform local files
+.terraform/
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+crash.log
+crash.*.log
+*.tfplan
+*.plan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+.terraform.lock.hcl
+
+# Terraform variable files can contain secrets.
+# Use *.tfvars.example for shareable examples.
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# JavaScript / frontend tooling
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+dist/
+build/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+coverage/
+
+# Python local files
+__pycache__/
+*.py[cod]
+.python-version
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# General caches and temp files
+.cache/
+.parcel-cache/
+.turbo/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
