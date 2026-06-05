@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090b" />
+    <meta
+      name="description"
+      content="BMW M8 Competition — a twin-turbo V8 grand tourer. A premium tribute page hosted on Amazon S3 + CloudFront."
+    />
+    <title>BMW M8 Competition — The Ultimate Driving Machine</title>
+
+    <!-- Progressive enhancement flag: scroll reveals only hide when JS is on -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===================== NAV ===================== -->
+    <header class="nav" id="top">
+      <a class="nav__brand" href="#top" aria-label="BMW M8 Competition home">
+        <span class="nav__stripe" aria-hidden="true"></span>
+        <span class="nav__mark">M8</span>
+        <span class="nav__sub">Competition</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#specs">Performance</a>
+        <a href="#design">Design</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+
+      <a class="nav__cta" href="#gallery">
+        Configure
+        <span aria-hidden="true">→</span>
+      </a>
+    </header>
+
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true">
+          <img
+            class="hero__img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/2019_BMW_M8_Competition_Front.jpg/1920px-2019_BMW_M8_Competition_Front.jpg"
+            alt=""
+            fetchpriority="high"
+          />
+          <div class="hero__scrim"></div>
+          <div class="hero__glow"></div>
+        </div>
+
+        <div class="hero__inner">
+          <p class="eyebrow hero__eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            BMW M GmbH · The Ultimate Driving Machine
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">M8</span>
+            <span class="hero__line hero__line--accent">Competition</span>
+          </h1>
+
+          <p class="hero__copy">
+            Four-point-four litres of twin-turbo V8, tuned on the Nürburgring and
+            built for the autobahn. A grand tourer that behaves like a race car —
+            until you want it to behave like a limousine.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#specs">
+              Explore the numbers
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--ghost" href="#gallery">View gallery</a>
+          </div>
+        </div>
+
+        <!-- Telemetry-style readouts -->
+        <aside class="hero__telemetry" aria-hidden="true">
+          <div class="telemetry__row">
+            <span class="telemetry__k">PWR</span>
+            <span class="telemetry__v">625 ps</span>
+          </div>
+          <div class="telemetry__row">
+            <span class="telemetry__k">0–100</span>
+            <span class="telemetry__v">3.2 s</span>
+          </div>
+          <div class="telemetry__row">
+            <span class="telemetry__k">DRIVE</span>
+            <span class="telemetry__v">M xDrive</span>
+          </div>
+        </aside>
+
+        <a class="hero__scroll" href="#marquee" aria-label="Scroll to content">
+          <span>Scroll</span>
+          <span class="hero__scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- ===================== MARQUEE ===================== -->
+      <section class="marquee" id="marquee" aria-label="Model highlights">
+        <div class="marquee__track">
+          <span>4.4L V8 M TwinPower Turbo</span><i aria-hidden="true">✕</i>
+          <span>625 PS</span><i aria-hidden="true">✕</i>
+          <span>750 Nm</span><i aria-hidden="true">✕</i>
+          <span>M xDrive AWD</span><i aria-hidden="true">✕</i>
+          <span>305 km/h</span><i aria-hidden="true">✕</i>
+          <span>Carbon Core</span><i aria-hidden="true">✕</i>
+          <!-- duplicate for seamless loop -->
+          <span aria-hidden="true">4.4L V8 M TwinPower Turbo</span><i aria-hidden="true">✕</i>
+          <span aria-hidden="true">625 PS</span><i aria-hidden="true">✕</i>
+          <span aria-hidden="true">750 Nm</span><i aria-hidden="true">✕</i>
+          <span aria-hidden="true">M xDrive AWD</span><i aria-hidden="true">✕</i>
+          <span aria-hidden="true">305 km/h</span><i aria-hidden="true">✕</i>
+          <span aria-hidden="true">Carbon Core</span><i aria-hidden="true">✕</i>
+        </div>
+      </section>
+
+      <!-- ===================== SPECS ===================== -->
+      <section class="specs" id="specs" aria-labelledby="specs-title">
+        <header class="section-head reveal">
+          <p class="eyebrow">01 — Performance</p>
+          <h2 class="section-title" id="specs-title">
+            Engineered to make distance disappear.
+          </h2>
+        </header>
+
+        <div class="stats">
+          <article class="stat reveal">
+            <span class="stat__num" data-count-to="625">625</span>
+            <span class="stat__unit">PS power</span>
+            <span class="stat__meta">@ 6,000 rpm</span>
+          </article>
+
+          <article class="stat reveal">
+            <span class="stat__num" data-count-to="3.2" data-suffix="s">3.2</span>
+            <span class="stat__unit">0–100 km/h</span>
+            <span class="stat__meta">Launch Control</span>
+          </article>
+
+          <article class="stat reveal">
+            <span class="stat__num" data-count-to="750">750</span>
+            <span class="stat__unit">Nm torque</span>
+            <span class="stat__meta">1,800–5,800 rpm</span>
+          </article>
+
+          <article class="stat reveal">
+            <span class="stat__num" data-count-to="305">305</span>
+            <span class="stat__unit">km/h top speed</span>
+            <span class="stat__meta">M Driver's Package</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== DESIGN / EDITORIAL ===================== -->
+      <section class="feature" id="design" aria-labelledby="design-title">
+        <header class="section-head reveal">
+          <p class="eyebrow">02 — Design</p>
+          <h2 class="section-title" id="design-title">
+            Track bite. Autobahn calm.
+          </h2>
+        </header>
+
+        <div class="feature__row reveal">
+          <figure class="feature__media">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/BMW_M8_Competition_IMG_3362.jpg/1280px-BMW_M8_Competition_IMG_3362.jpg"
+              alt="BMW M8 Competition coupe in grey, three-quarter side profile"
+              loading="lazy"
+            />
+          </figure>
+          <div class="feature__text">
+            <span class="feature__index">/ 01</span>
+            <h3>A planted, predatory stance</h3>
+            <p>
+              Wide arches, frameless doors and a long low bonnet give the M8 a
+              presence that reads as fast standing still. Carbon-fibre roof,
+              quad tailpipes, and forged M wheels are not decoration — they are
+              the spec sheet, made visible.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature__row feature__row--reverse reveal">
+          <figure class="feature__media">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2019_BMW_M8_Competition_Interior.jpg/1280px-2019_BMW_M8_Competition_Interior.jpg"
+              alt="BMW M8 Competition interior with M sport seats and driver-focused cockpit"
+              loading="lazy"
+            />
+          </figure>
+          <div class="feature__text">
+            <span class="feature__index">/ 02</span>
+            <h3>A cockpit built around the driver</h3>
+            <p>
+              Merino leather, carbon trim and the red M1/M2 setup buttons on the
+              wheel put track-day modes a thumb away. Two configurable presets
+              swap throttle, damping, steering and all-wheel-drive bias in an
+              instant — GT comfort to rear-drive fury.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== GALLERY ===================== -->
+      <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+        <header class="section-head reveal">
+          <p class="eyebrow">03 — Gallery</p>
+          <h2 class="section-title" id="gallery-title">Every angle earns it.</h2>
+        </header>
+
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--wide reveal">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/BMW_F92_M8_Competition_xDrive_Barcelona_Blue_Metallic.jpg/1280px-BMW_F92_M8_Competition_xDrive_Barcelona_Blue_Metallic.jpg"
+              alt="BMW M8 Competition F92 in Barcelona Blue Metallic"
+              loading="lazy"
+            />
+            <figcaption>F92 · Barcelona Blue Metallic</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/2019_BMW_M8_Competition_Front.jpg/1280px-2019_BMW_M8_Competition_Front.jpg"
+              alt="BMW M8 Competition front view"
+              loading="lazy"
+            />
+            <figcaption>Front fascia</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/2019_BMW_M8_Competition_Rear.jpg/1280px-2019_BMW_M8_Competition_Rear.jpg"
+              alt="BMW M8 Competition rear view with quad exhaust"
+              loading="lazy"
+            />
+            <figcaption>Quad exhaust rear</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===================== CTA BAND ===================== -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="cta__inner reveal">
+          <p class="eyebrow">The last word</p>
+          <h2 class="cta__title" id="cta-title">
+            It doesn't ask for the long way home. It demands it.
+          </h2>
+          <a class="btn btn--solid btn--lg" href="#top">
+            Back to the top
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="footer__top">
+        <span class="footer__brand">BMW M8 Competition</span>
+        <span class="footer__note">
+          Fan tribute page · hosted on Amazon S3 + CloudFront
+        </span>
+      </div>
+
+      <div class="footer__credits">
+        <p>Photography under CC BY-SA 4.0, via Wikimedia Commons:</p>
+        <ul>
+          <li>
+            Front / Rear / Interior —
+            <a href="https://commons.wikimedia.org/wiki/User:Vauxford" rel="nofollow">Vauxford</a>
+          </li>
+          <li>
+            Grey coupe profile —
+            <a href="https://commons.wikimedia.org/wiki/File:BMW_M8_Competition_IMG_3362.jpg" rel="nofollow">Alexander Migl</a>
+          </li>
+          <li>
+            Barcelona Blue F92 —
+            <a href="https://commons.wikimedia.org/wiki/File:BMW_F92_M8_Competition_xDrive_Barcelona_Blue_Metallic.jpg" rel="nofollow">Damian B Oh</a>
+          </li>
+        </ul>
+        <p class="footer__legal">
+          Not affiliated with or endorsed by BMW AG. © <span id="year">2026</span>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
